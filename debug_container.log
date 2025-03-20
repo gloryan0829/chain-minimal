@@ -4,23 +4,23 @@ Registering providers
 goroutine 1 [running]:
 cosmossdk.io/depinject.getStackTrace()
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/config.go:193 +0x38
-cosmossdk.io/depinject/appconfig.LoadJSON.Error.func2(0x14dd2e058?)
+cosmossdk.io/depinject/appconfig.LoadJSON.Error.func2(0x12f696358?)
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/config.go:166 +0x2c
-cosmossdk.io/depinject.containerConfig.apply(0x14000a8f708?, 0x1028f5a98?)
+cosmossdk.io/depinject.containerConfig.apply(0x14000a87708?, 0x1041cd9b8?)
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/config.go:186 +0x28
-github.com/alice/checkers/app.AppConfig.Configs.func1(0x140000f68c0)
+github.com/alice/checkers/app.AppConfig.Configs.func1(0x1400049f2d0)
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/config.go:174 +0x64
-cosmossdk.io/depinject.containerConfig.apply(0x107111f48?, 0x106462200?)
+cosmossdk.io/depinject.containerConfig.apply(0x108653628?, 0x107d3a2c0?)
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/config.go:186 +0x28
-github.com/alice/checkers/cmd/minid/cmd.NewRootCmd.Configs.func3(0x140000f68c0)
+github.com/alice/checkers/cmd/minid/cmd.NewRootCmd.Configs.func3(0x1400049f2d0)
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/config.go:174 +0x64
-cosmossdk.io/depinject.containerConfig.apply(0x14000611050?, 0x0?)
+cosmossdk.io/depinject.containerConfig.apply(0x140000991d0?, 0x0?)
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/config.go:186 +0x28
-cosmossdk.io/depinject.doInject(0x140004b30e0, {0x1050e1a58, 0x140009a5580}, {0x1050bcd40?, 0x14000a4d8c0?}, {0x1050bc7a0, 0x14000a4d820}, {0x140009a5540, 0x4, 0x4})
+cosmossdk.io/depinject.doInject(0x1400074ae10, {0x1069b9a58, 0x140008cf080}, {0x106994d40?, 0x1400061c8e0?}, {0x1069947a0, 0x1400061c7a0}, {0x140008cf040, 0x4, 0x4})
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/inject.go:74 +0x228
-cosmossdk.io/depinject.inject({0x1050e1a58, 0x140009a5580}, {0x1050bcd40, 0x14000a4d8c0}, {0x1050bc7a0, 0x14000a4d820}, {0x140009a5540, 0x4, 0x4})
+cosmossdk.io/depinject.inject({0x1069b9a58, 0x140008cf080}, {0x106994d40, 0x1400061c8e0}, {0x1069947a0, 0x1400061c7a0}, {0x140008cf040, 0x4, 0x4})
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/inject.go:45 +0x210
-cosmossdk.io/depinject.Inject({0x1050bc7a0, 0x14000a4d820}, {0x140009a5540, 0x4, 0x4})
+cosmossdk.io/depinject.Inject({0x1069947a0, 0x1400061c7a0}, {0x140008cf040, 0x4, 0x4})
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/inject.go:19 +0x68
 github.com/alice/checkers/cmd/minid/cmd.NewRootCmd()
 	/Users/chris/Workspace/projects/go-project/study/checkers-minimal/cmd/minid/cmd/root.go:42 +0x298
@@ -30,19 +30,19 @@ main.main()
 goroutine 1 [running]:
 cosmossdk.io/depinject.getStackTrace()
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/config.go:193 +0x38
-github.com/alice/checkers/app.AppConfig.Configs.func1(0x140000f68c0)
+github.com/alice/checkers/app.AppConfig.Configs.func1(0x1400049f2d0)
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/config.go:176 +0x74
-cosmossdk.io/depinject.containerConfig.apply(0x107111f48?, 0x106462200?)
+cosmossdk.io/depinject.containerConfig.apply(0x108653628?, 0x107d3a2c0?)
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/config.go:186 +0x28
-github.com/alice/checkers/cmd/minid/cmd.NewRootCmd.Configs.func3(0x140000f68c0)
+github.com/alice/checkers/cmd/minid/cmd.NewRootCmd.Configs.func3(0x1400049f2d0)
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/config.go:174 +0x64
-cosmossdk.io/depinject.containerConfig.apply(0x14000611050?, 0x0?)
+cosmossdk.io/depinject.containerConfig.apply(0x140000991d0?, 0x0?)
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/config.go:186 +0x28
-cosmossdk.io/depinject.doInject(0x140004b30e0, {0x1050e1a58, 0x140009a5580}, {0x1050bcd40?, 0x14000a4d8c0?}, {0x1050bc7a0, 0x14000a4d820}, {0x140009a5540, 0x4, 0x4})
+cosmossdk.io/depinject.doInject(0x1400074ae10, {0x1069b9a58, 0x140008cf080}, {0x106994d40?, 0x1400061c8e0?}, {0x1069947a0, 0x1400061c7a0}, {0x140008cf040, 0x4, 0x4})
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/inject.go:74 +0x228
-cosmossdk.io/depinject.inject({0x1050e1a58, 0x140009a5580}, {0x1050bcd40, 0x14000a4d8c0}, {0x1050bc7a0, 0x14000a4d820}, {0x140009a5540, 0x4, 0x4})
+cosmossdk.io/depinject.inject({0x1069b9a58, 0x140008cf080}, {0x106994d40, 0x1400061c8e0}, {0x1069947a0, 0x1400061c7a0}, {0x140008cf040, 0x4, 0x4})
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/inject.go:45 +0x210
-cosmossdk.io/depinject.Inject({0x1050bc7a0, 0x14000a4d820}, {0x140009a5540, 0x4, 0x4})
+cosmossdk.io/depinject.Inject({0x1069947a0, 0x1400061c7a0}, {0x140008cf040, 0x4, 0x4})
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/inject.go:19 +0x68
 github.com/alice/checkers/cmd/minid/cmd.NewRootCmd()
 	/Users/chris/Workspace/projects/go-project/study/checkers-minimal/cmd/minid/cmd/root.go:42 +0x298
@@ -52,15 +52,15 @@ main.main()
 goroutine 1 [running]:
 cosmossdk.io/depinject.getStackTrace()
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/config.go:193 +0x38
-github.com/alice/checkers/cmd/minid/cmd.NewRootCmd.Configs.func3(0x140000f68c0)
+github.com/alice/checkers/cmd/minid/cmd.NewRootCmd.Configs.func3(0x1400049f2d0)
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/config.go:176 +0x74
-cosmossdk.io/depinject.containerConfig.apply(0x14000611050?, 0x0?)
+cosmossdk.io/depinject.containerConfig.apply(0x140000991d0?, 0x0?)
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/config.go:186 +0x28
-cosmossdk.io/depinject.doInject(0x140004b30e0, {0x1050e1a58, 0x140009a5580}, {0x1050bcd40?, 0x14000a4d8c0?}, {0x1050bc7a0, 0x14000a4d820}, {0x140009a5540, 0x4, 0x4})
+cosmossdk.io/depinject.doInject(0x1400074ae10, {0x1069b9a58, 0x140008cf080}, {0x106994d40?, 0x1400061c8e0?}, {0x1069947a0, 0x1400061c7a0}, {0x140008cf040, 0x4, 0x4})
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/inject.go:74 +0x228
-cosmossdk.io/depinject.inject({0x1050e1a58, 0x140009a5580}, {0x1050bcd40, 0x14000a4d8c0}, {0x1050bc7a0, 0x14000a4d820}, {0x140009a5540, 0x4, 0x4})
+cosmossdk.io/depinject.inject({0x1069b9a58, 0x140008cf080}, {0x106994d40, 0x1400061c8e0}, {0x1069947a0, 0x1400061c7a0}, {0x140008cf040, 0x4, 0x4})
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/inject.go:45 +0x210
-cosmossdk.io/depinject.Inject({0x1050bc7a0, 0x14000a4d820}, {0x140009a5540, 0x4, 0x4})
+cosmossdk.io/depinject.Inject({0x1069947a0, 0x1400061c7a0}, {0x140008cf040, 0x4, 0x4})
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/inject.go:19 +0x68
 github.com/alice/checkers/cmd/minid/cmd.NewRootCmd()
 	/Users/chris/Workspace/projects/go-project/study/checkers-minimal/cmd/minid/cmd/root.go:42 +0x298
@@ -71,23 +71,23 @@ main.main()
 goroutine 1 [running]:
 cosmossdk.io/depinject.getStackTrace()
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/config.go:193 +0x38
-cosmossdk.io/depinject/appconfig.LoadJSON.Error.func2(0x14dd2e058?)
+cosmossdk.io/depinject/appconfig.LoadJSON.Error.func2(0x12f696358?)
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/config.go:166 +0x2c
-cosmossdk.io/depinject.containerConfig.apply(0x14000a8f708?, 0x1028f5a98?)
+cosmossdk.io/depinject.containerConfig.apply(0x14000a87708?, 0x1041cd9b8?)
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/config.go:186 +0x28
-github.com/alice/checkers/app.AppConfig.Configs.func1(0x140000f68c0)
+github.com/alice/checkers/app.AppConfig.Configs.func1(0x1400049f2d0)
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/config.go:174 +0x64
-cosmossdk.io/depinject.containerConfig.apply(0x107111f48?, 0x106462200?)
+cosmossdk.io/depinject.containerConfig.apply(0x108653628?, 0x107d3a2c0?)
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/config.go:186 +0x28
-github.com/alice/checkers/cmd/minid/cmd.NewRootCmd.Configs.func3(0x140000f68c0)
+github.com/alice/checkers/cmd/minid/cmd.NewRootCmd.Configs.func3(0x1400049f2d0)
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/config.go:174 +0x64
-cosmossdk.io/depinject.containerConfig.apply(0x14000611050?, 0x0?)
+cosmossdk.io/depinject.containerConfig.apply(0x140000991d0?, 0x0?)
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/config.go:186 +0x28
-cosmossdk.io/depinject.doInject(0x140004b30e0, {0x1050e1a58, 0x140009a5580}, {0x1050bcd40?, 0x14000a4d8c0?}, {0x1050bc7a0, 0x14000a4d820}, {0x140009a5540, 0x4, 0x4})
+cosmossdk.io/depinject.doInject(0x1400074ae10, {0x1069b9a58, 0x140008cf080}, {0x106994d40?, 0x1400061c8e0?}, {0x1069947a0, 0x1400061c7a0}, {0x140008cf040, 0x4, 0x4})
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/inject.go:74 +0x228
-cosmossdk.io/depinject.inject({0x1050e1a58, 0x140009a5580}, {0x1050bcd40, 0x14000a4d8c0}, {0x1050bc7a0, 0x14000a4d820}, {0x140009a5540, 0x4, 0x4})
+cosmossdk.io/depinject.inject({0x1069b9a58, 0x140008cf080}, {0x106994d40, 0x1400061c8e0}, {0x1069947a0, 0x1400061c7a0}, {0x140008cf040, 0x4, 0x4})
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/inject.go:45 +0x210
-cosmossdk.io/depinject.Inject({0x1050bc7a0, 0x14000a4d820}, {0x140009a5540, 0x4, 0x4})
+cosmossdk.io/depinject.Inject({0x1069947a0, 0x1400061c7a0}, {0x140008cf040, 0x4, 0x4})
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/inject.go:19 +0x68
 github.com/alice/checkers/cmd/minid/cmd.NewRootCmd()
 	/Users/chris/Workspace/projects/go-project/study/checkers-minimal/cmd/minid/cmd/root.go:42 +0x298
@@ -97,19 +97,19 @@ main.main()
 goroutine 1 [running]:
 cosmossdk.io/depinject.getStackTrace()
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/config.go:193 +0x38
-github.com/alice/checkers/app.AppConfig.Configs.func1(0x140000f68c0)
+github.com/alice/checkers/app.AppConfig.Configs.func1(0x1400049f2d0)
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/config.go:176 +0x74
-cosmossdk.io/depinject.containerConfig.apply(0x107111f48?, 0x106462200?)
+cosmossdk.io/depinject.containerConfig.apply(0x108653628?, 0x107d3a2c0?)
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/config.go:186 +0x28
-github.com/alice/checkers/cmd/minid/cmd.NewRootCmd.Configs.func3(0x140000f68c0)
+github.com/alice/checkers/cmd/minid/cmd.NewRootCmd.Configs.func3(0x1400049f2d0)
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/config.go:174 +0x64
-cosmossdk.io/depinject.containerConfig.apply(0x14000611050?, 0x0?)
+cosmossdk.io/depinject.containerConfig.apply(0x140000991d0?, 0x0?)
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/config.go:186 +0x28
-cosmossdk.io/depinject.doInject(0x140004b30e0, {0x1050e1a58, 0x140009a5580}, {0x1050bcd40?, 0x14000a4d8c0?}, {0x1050bc7a0, 0x14000a4d820}, {0x140009a5540, 0x4, 0x4})
+cosmossdk.io/depinject.doInject(0x1400074ae10, {0x1069b9a58, 0x140008cf080}, {0x106994d40?, 0x1400061c8e0?}, {0x1069947a0, 0x1400061c7a0}, {0x140008cf040, 0x4, 0x4})
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/inject.go:74 +0x228
-cosmossdk.io/depinject.inject({0x1050e1a58, 0x140009a5580}, {0x1050bcd40, 0x14000a4d8c0}, {0x1050bc7a0, 0x14000a4d820}, {0x140009a5540, 0x4, 0x4})
+cosmossdk.io/depinject.inject({0x1069b9a58, 0x140008cf080}, {0x106994d40, 0x1400061c8e0}, {0x1069947a0, 0x1400061c7a0}, {0x140008cf040, 0x4, 0x4})
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/inject.go:45 +0x210
-cosmossdk.io/depinject.Inject({0x1050bc7a0, 0x14000a4d820}, {0x140009a5540, 0x4, 0x4})
+cosmossdk.io/depinject.Inject({0x1069947a0, 0x1400061c7a0}, {0x140008cf040, 0x4, 0x4})
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/inject.go:19 +0x68
 github.com/alice/checkers/cmd/minid/cmd.NewRootCmd()
 	/Users/chris/Workspace/projects/go-project/study/checkers-minimal/cmd/minid/cmd/root.go:42 +0x298
@@ -119,15 +119,15 @@ main.main()
 goroutine 1 [running]:
 cosmossdk.io/depinject.getStackTrace()
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/config.go:193 +0x38
-github.com/alice/checkers/cmd/minid/cmd.NewRootCmd.Configs.func3(0x140000f68c0)
+github.com/alice/checkers/cmd/minid/cmd.NewRootCmd.Configs.func3(0x1400049f2d0)
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/config.go:176 +0x74
-cosmossdk.io/depinject.containerConfig.apply(0x14000611050?, 0x0?)
+cosmossdk.io/depinject.containerConfig.apply(0x140000991d0?, 0x0?)
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/config.go:186 +0x28
-cosmossdk.io/depinject.doInject(0x140004b30e0, {0x1050e1a58, 0x140009a5580}, {0x1050bcd40?, 0x14000a4d8c0?}, {0x1050bc7a0, 0x14000a4d820}, {0x140009a5540, 0x4, 0x4})
+cosmossdk.io/depinject.doInject(0x1400074ae10, {0x1069b9a58, 0x140008cf080}, {0x106994d40?, 0x1400061c8e0?}, {0x1069947a0, 0x1400061c7a0}, {0x140008cf040, 0x4, 0x4})
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/inject.go:74 +0x228
-cosmossdk.io/depinject.inject({0x1050e1a58, 0x140009a5580}, {0x1050bcd40, 0x14000a4d8c0}, {0x1050bc7a0, 0x14000a4d820}, {0x140009a5540, 0x4, 0x4})
+cosmossdk.io/depinject.inject({0x1069b9a58, 0x140008cf080}, {0x106994d40, 0x1400061c8e0}, {0x1069947a0, 0x1400061c7a0}, {0x140008cf040, 0x4, 0x4})
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/inject.go:45 +0x210
-cosmossdk.io/depinject.Inject({0x1050bc7a0, 0x14000a4d820}, {0x140009a5540, 0x4, 0x4})
+cosmossdk.io/depinject.Inject({0x1069947a0, 0x1400061c7a0}, {0x140008cf040, 0x4, 0x4})
 	/Users/chris/Workspace/sooho/go/pkg/mod/cosmossdk.io/depinject@v1.1.0/inject.go:19 +0x68
 github.com/alice/checkers/cmd/minid/cmd.NewRootCmd()
 	/Users/chris/Workspace/projects/go-project/study/checkers-minimal/cmd/minid/cmd/root.go:42 +0x298

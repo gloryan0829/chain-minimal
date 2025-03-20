@@ -170,5 +170,6 @@ require (
 
 replace (
 	github.com/alice/checkers => ../checkers-minimal/
+	// Fix upstream GHSA-h395-qcrw-5vmq vulnerability.
 	github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.50.13
 )
