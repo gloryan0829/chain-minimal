@@ -1,0 +1,25 @@
+syntax = "proto3";
+package alice.checkers.v1;
+
+option go_package = "github.com/alice/checkers";
+
+import "alice/checkers/v1/types.proto";
+import "google/api/annotations.proto";
+import "cosmos/query/v1/query.proto";
+
+service Query {
+    rpc GetGame(QueryGetGameRequest) returns (QueryGetGameResponse) {
+        option (cosmos.query.v1.module_query_safe) = true;
+        option (google.api.http).get = "/alice/checkers/v1/game/{index}";
+    }
+}
+
+message QueryGetGameRequest {
+    string index = 1;
+}
+
+message QueryGetGameResponse {
+    StoredGame Game = 1;
+}
+
+

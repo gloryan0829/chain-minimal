@@ -8,7 +8,6 @@ import (
 // AutoCLIOptions implements the autocli.HasAutoCLIConfig interface.
 func (am AppModule) AutoCLIOptions() *autocliv1.ModuleOptions {
     return &autocliv1.ModuleOptions{
-        Query: nil,
         Tx:    &autocliv1.ServiceCommandDescriptor{
             Service: checkersv1.Msg_ServiceDesc.ServiceName,
             RpcCommandOptions: []*autocliv1.RpcCommandOptions{
@@ -20,6 +19,19 @@ func (am AppModule) AutoCLIOptions() *autocliv1.ModuleOptions {
                         {ProtoField: "index"},
                         {ProtoField: "black"},
                         {ProtoField: "red"},
+                    },
+                },
+            },
+        },
+        Query: &autocliv1.ServiceCommandDescriptor{
+            Service: checkersv1.Query_ServiceDesc.ServiceName,
+            RpcCommandOptions: []*autocliv1.RpcCommandOptions{
+                {
+                    RpcMethod: "GetGame",
+                    Use: "get-game index",
+                    Short: "Get a checkers game by index",
+                    PositionalArgs: []*autocliv1.PositionalArgDescriptor{
+                        {ProtoField: "index"},
                     },
                 },
             },

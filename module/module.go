@@ -1,6 +1,7 @@
 package module
 
 import (
+	"context"
 	"encoding/json"
 	"fmt"
 
@@ -52,9 +53,9 @@ func (AppModule) RegisterLegacyAminoCodec(cdc *codec.LegacyAmino) {}
 
 // RegisterGRPCGatewayRoutes registers the gRPC Gateway routes for the checkers module.
 func (AppModule) RegisterGRPCGatewayRoutes(clientCtx client.Context, mux *gwruntime.ServeMux) {
-    // if err := checkers.RegisterQueryHandlerClient(context.Background(), mux, checkers.NewQueryClient(clientCtx)); err != nil {
-    //     panic(err)
-    // }
+    if err := checkers.RegisterQueryHandlerClient(context.Background(), mux, checkers.NewQueryClient(clientCtx)); err != nil {
+        panic(err)
+    }
 }
 
 // RegisterInterfaces registers interfaces and implementations of the checkers module.
@@ -68,6 +69,7 @@ func (AppModule) ConsensusVersion() uint64 { return ConsensusVersion }
 // RegisterServices registers a gRPC query service to respond to the module-specific gRPC queries.
 func (am AppModule) RegisterServices(cfg module.Configurator) {
     checkers.RegisterMsgServer(cfg.MsgServer(),keeper.NewMsgServerImpl(am.keeper))
+    checkers.RegisterQueryServer(cfg.QueryServer(),keeper.NewQueryServerImpl(am.keeper))
 }
 
 // DefaultGenesis returns default genesis state as raw bytes for the module.
