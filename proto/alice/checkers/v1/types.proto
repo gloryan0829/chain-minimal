@@ -32,4 +32,18 @@ message GenesisState {
   // params defines all the parameters of the module.
   Params params = 2
   [ (gogoproto.nullable) = false, (amino.dont_omitempty) = true ];
+
+  repeated IndexedStoredGame indexStoreGameList = 3 [(gogoproto.nullable) = false];
+}
+
+message StoredGame {
+  string board = 1;
+  string turn = 2;
+  string black = 3 [(cosmos_proto.scalar) = "cosmos.AddressString"];
+  string red = 4[(cosmos_proto.scalar) = "cosmos.AddressString"];
+}
+
+message IndexedStoredGame {
+  string index = 1;
+  StoredGame storedGame = 2 [(gogoproto.nullable) = false];
 }
