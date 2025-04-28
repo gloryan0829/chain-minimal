@@ -1,8 +1,7 @@
 module github.com/alice/checkers
 
 go 1.21
-
-toolchain go1.21.0
+toolchain go1.24.1
 
 replace (
 	github.com/alice/checkers => ../checkers-minimal/
@@ -35,7 +34,7 @@ require (
 	github.com/spf13/viper v1.17.0
 	google.golang.org/genproto/googleapis/api v0.0.0-20231012201019-e917dd12ba7a
 	google.golang.org/grpc v1.59.0
-	google.golang.org/protobuf v1.31.0
+	google.golang.org/protobuf v1.36.6
 )
 
 require (
